@@ -1,0 +1,71 @@
+body {
+    max-width: 100vw;
+    font-family: Arial, sans-serif; /* Adicionado para um visual melhor */
+    margin: 0;
+}
+
+header {
+    /* COR PRINCIPAL: AZUL */
+    background-color: #183C63; /* Azul escuro original, mantido como principal */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 24px; /* Aumentado ligeiramente */
+}
+
+main {
+    background-color: #F4F4F4; /* Cinza muito claro para o fundo dos posts */
+    color: #183C63;
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centralizar os cards */
+}
+
+article {
+    display: flex;
+    /* BORDA AZUL */
+    border: 2px solid #183C63; /* Borda um pouco mais grossa */
+    background-color: #FFFFFF; /* Fundo branco para os cards */
+    margin: 16px;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 8px; /* Cantos arredondados nos cards */
+
+    flex: 1 1 30%; /* Ligeiramente maior para caber bem 3 por linha em telas médias */
+    min-width: 280px; /* Impede que fiquem muito pequenos */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover; /* Garante que a imagem não distorça */
+    border-radius: 4px; /* Leve arredondado na imagem */
+}
+
+.artigo-autor {
+    font-weight: bold;
+}
+
+.artigo-fonte {
+    font-size: 0.8em;
+    color: #666;
+}
+
+/* ESTILIZAÇÃO DOS BOTÕES COM COR SECUNDÁRIA: VERMELHO */
+button {
+    background-color: #D9534F; /* Vermelho mais suave */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin: 4px;
+    border-radius: 20px; /* Estilo pílula */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #C9302C; /* Vermelho mais escuro no hover */
+}
